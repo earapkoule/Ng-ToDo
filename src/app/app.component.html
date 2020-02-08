@@ -1,0 +1,3 @@
+<input type="text" placeholder="name" [(ngModel)]="newTodo"/>
+<button (click)="addStuff(newTodo)">Add</button>
+<div *ngFor="let todo of todos">{{todo.name}} - {{todo.id}}</div>

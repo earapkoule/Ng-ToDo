@@ -1,3 +1,2 @@
-<input type="text" placeholder="name" [(ngModel)]="newTodo"/>
-<button (click)="addStuff(newTodo)">Add</button>
-<div *ngFor="let todo of todos">{{todo.name}} - {{todo.id}}</div>
+<app-add-todo-input (onAddClick)="addNewToDo($event)"></app-add-todo-input>
+<app-todo-list [toDoList]="todos"></app-todo-list>
